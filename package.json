@@ -16,11 +16,13 @@
     ]
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.4.2",
     "@types/node": "20.6.0",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
+    "negotiator": "^0.6.3",
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -29,9 +31,11 @@
   },
   "devDependencies": {
     "@hookform/resolvers": "^3.3.0",
+    "@types/negotiator": "^0.6.1",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.4.0",
     "babel-jest": "^29.6.4",
+    "components-client-blog": "^1.0.3",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-prettier": "^9.0.0",
@@ -46,6 +50,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "3.0.2",
-    "react-hook-form": "^7.45.4"
+    "react-hook-form": "^7.45.4",
+    "server-only": "^0.0.1"
   }
 }
