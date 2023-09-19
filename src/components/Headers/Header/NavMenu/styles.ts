@@ -5,9 +5,10 @@ import { ILinkItemProps } from './interface';
 
 export const Nav = styled.nav`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: ${({ theme }) => theme.width.s}%;
+  gap: ${({ theme }) => theme.gaps.px10}px;
+  width: ${({ theme }) => theme.width.xs}%;
   height: ${({ theme }) => theme.height.s}px;
   background-color: ${({ theme }) => theme.colors.WHITE};
   font-family: ${({ theme }) => theme.fontFamilies.cormorant};
@@ -19,9 +20,8 @@ export const Nav = styled.nav`
 `;
 
 export const LinkItem = styled(Link)<ILinkItemProps>`
-  margin-right: ${({ theme }) => theme.margins.xs}px;
   font-family: ${({ theme }) => theme.fontFamilies.cormorant};
-  font-size: ${({ theme }) => theme.fontSizes.s}px;
+  font-size: ${({ theme }) => theme.fontSizes.ss}px;
   font-weight: ${({ theme }) => theme.fontWeights.xl};
   color: ${({ theme }) => theme.colors.CHARCOAL};
   transition: transform 250ms;

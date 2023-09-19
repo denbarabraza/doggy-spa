@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { Button, ErrorMessage, WrapperError } from '@/app/[lang]/styles';
+import { Button, ErrorMessage, WrapperError } from '@/app/[lng]/styles';
 
 export default function Error({
   error,
