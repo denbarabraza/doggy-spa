@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-  
+
   @font-face {
     font-family: 'Cinzel Decorative';
     font-style: normal;
@@ -76,5 +76,9 @@ export const GlobalStyles = createGlobalStyle`
     list-style: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    color: ${({ theme }) => theme.colors.CHARCOAL};
   }
 `;

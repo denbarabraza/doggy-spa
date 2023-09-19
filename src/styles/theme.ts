@@ -1,4 +1,4 @@
-import { CommonTheme } from './types';
+import { ITheme } from './types';
 
 export enum ColorsEnum {
   WHITE = '#FFFFFF',
@@ -13,10 +13,7 @@ export enum ColorsEnum {
   CRIMSON = '#DC143C',
 }
 
-export const theme: CommonTheme = {
-  dimensions: {
-    laptop: 1024,
-  },
+export const theme: ITheme = {
   colors: {
     WHITE: ColorsEnum.WHITE,
     BLACK: ColorsEnum.BLACK,
@@ -40,6 +37,7 @@ export const theme: CommonTheme = {
   fontSizes: {
     xxs: 14,
     xs: 16,
+    sss: 18,
     ss: 22,
     s: 26,
     m: 30,
@@ -50,24 +48,25 @@ export const theme: CommonTheme = {
     xl: 70,
   },
   fontFamilies: {
-    cormorant: '`Cormorant`, sans-serif',
     cinzelDecorative: '`Cinzel Decorative`, sans-serif',
     tangerine: '`Tangerine`, sans-serif',
+    cormorant: '`Cormorant`, sans-serif',
   },
   width: {
-    xxs: 24,
-    xs: 72,
+    pr50: 50,
+    xxs: 25,
+    xs: 70,
     s: 100,
-    ss: 128,
+    ss: 130,
     ssss: 180,
     ssm: 200,
     ssmm: 250,
-    sm: 332,
-    smm: 366,
+    sm: 330,
+    smm: 365,
     smmm: 400,
-    sss: 478,
-    m: 498,
-    mm: 751,
+    sss: 480,
+    m: 500,
+    mm: 750,
     l: 1280,
   },
   height: {
@@ -111,7 +110,14 @@ export const theme: CommonTheme = {
     s: 1000,
     m: 2000,
   },
+  gaps: {
+    px10: 10,
+    px20: 20,
+  },
   top: {
     s: 100,
+  },
+  dimensions: {
+    laptop: 1024,
   },
 };

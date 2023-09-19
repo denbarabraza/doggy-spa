@@ -1,4 +1,4 @@
-export interface CommonTheme {
+export interface ITheme {
   dimensions: {
     laptop: number;
   };
@@ -25,6 +25,7 @@ export interface CommonTheme {
   fontSizes: {
     xxs: number;
     xs: number;
+    sss: number;
     ss: number;
     s: number;
     m: number;
@@ -40,6 +41,7 @@ export interface CommonTheme {
     tangerine: string;
   };
   width: {
+    pr50: number;
     xxs: number;
     xs: number;
     s: number;
@@ -86,6 +88,10 @@ export interface CommonTheme {
     s: number;
     m: number;
     l: number;
+  };
+  gaps: {
+    px10: number;
+    px20: number;
   };
   opacities: {
     s: number;

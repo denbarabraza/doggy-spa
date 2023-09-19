@@ -16,8 +16,9 @@ export const NavBar = styled.div`
   margin: ${({ theme }) => theme.margins.xxxs} auto;
   width: ${({ theme }) => theme.width.s}%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  gap: ${({ theme }) => theme.gaps.px20}px;
 
   @media (max-width: ${({ theme }) => theme.dimensions.laptop}px) {
     margin-top: ${({ theme }) => theme.margins.xs}px;

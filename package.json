@@ -16,16 +16,19 @@
     ]
   },
   "dependencies": {
-    "@formatjs/intl-localematcher": "^0.4.2",
     "@types/node": "20.6.0",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
+    "accept-language": "^3.0.18",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
-    "negotiator": "^0.6.3",
+    "i18next": "^23.5.1",
+    "i18next-browser-languagedetector": "^7.1.0",
+    "i18next-resources-to-backend": "^1.1.4",
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-i18next": "^13.2.2",
     "styled-components": "^6.0.8",
     "typescript": "5.2.2"
   },
@@ -50,7 +53,6 @@
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "3.0.2",
-    "react-hook-form": "^7.45.4",
-    "server-only": "^0.0.1"
+    "react-hook-form": "^7.45.4"
   }
 }

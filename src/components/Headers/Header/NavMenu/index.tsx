@@ -1,15 +1,17 @@
+'use client';
+
+import React, { FC } from 'react';
 import { usePathname } from 'next/navigation';
 
+import { useMyTranslation } from '@/app/i18n/client';
 import { headerNavMenu } from '@/constants/navMenu';
-import { ILanguage } from '@/interfaces';
-import { getDictionary } from '@/lib/dictionary';
 import { checkIsPathActive } from '@/utils';
 
 import { LinkItem, Nav } from './styles';
 
-export default async function NavMenu({ params }: ILanguage) {
-  const { lang } = params;
-  const t: { [key: string]: string } = await getDictionary(lang);
+const NavMenu: FC = () => {
+  const { t, locale } = useMyTranslation();
+
   const pathName = usePathname();
 
   return (
@@ -18,11 +20,13 @@ export default async function NavMenu({ params }: ILanguage) {
         const isActive = checkIsPathActive(pathName, path);
 
         return (
-          <LinkItem key={name} href={`/${lang}${path}`} isActive={isActive}>
-            {t[name]}
+          <LinkItem key={name} href={`/${locale}${path}`} isActive={isActive}>
+            {t(name)}
           </LinkItem>
         );
       })}
     </Nav>
   );
-}
+};
+
+export default NavMenu;
